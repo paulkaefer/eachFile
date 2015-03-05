@@ -62,8 +62,8 @@ classdef FileIterator < each.iterators.Iterable
             obj.NumberOfIterations = numel(obj.Array);
         end
         
-        function elem = getValue(obj,k)
-            elem = obj.Array(k);
+        function elem = getValue(obj, k)
+            elem = obj.Array{k};
         end
         
     end
